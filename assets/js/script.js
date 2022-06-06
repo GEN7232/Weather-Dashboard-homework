@@ -1,16 +1,11 @@
 var apiKey = "d0cb8cd20790977405d779960bbd6f85";
-// var apiKey = "45ebbd33aab5c77a18994061b0a6ee6a"
 var pastCities = JSON.parse(localStorage.getItem("pastCities")) || [];
 var clear = document.getElementById("clear");
 var currentCity = document.getElementById('search');
 var searchBtn = document.getElementById('searchBtn');
-// var locations = document.getElementsByClassName("locations");
 var locations = document.getElementById("locations");
 var fiveDay = document.getElementById('5day');
 
-// var DateTime = luxon.DateTime;
-// const now = DateTime.now();
-// console.log(DateTime);
 
 function searchCity (searchCity) {
     fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + searchCity + "&limit=1&appid=" + apiKey).then(response => {
@@ -85,7 +80,6 @@ searchCity(city);
 })
 
 function getPastCities () {
-    // console.log(pastCities);
     locations.innerHTML = "";
     pastCities.forEach(function (city){
         let btn = document.createElement("button");
@@ -103,7 +97,3 @@ function getPastCities () {
 
  
 getPastCities();
-// $(".search-btn").on("click", getOldWeather(this.value))
-
-// getPastCities();
-
