@@ -1,0 +1,26 @@
+#clear {
+    margin-left: 5%;
+}
+
+.low {
+    background-color: lightblue;
+}
+
+.moderate {
+    background-color: orange;
+}
+
+.severe {
+    background-color: red;
+}
+
+#current .card {
+width: 600px;
+text-align: center;
+}
+
+.uvi {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2px;
+}
