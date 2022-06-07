@@ -1,1 +1,8 @@
 # Weather-Dashboard-homework
+<img width="1792" alt="Screen Shot 2022-06-06 at 6 19 07 PM" src="https://user-images.githubusercontent.com/100956840/172258630-70185a7f-353e-4b79-b657-4757c0629ce7.png">
+
+https://gen7232.github.io/Weather-Dashboard-homework/
+
+For this assignment I have a weather dashboard programmed. It starts when the user types in a city name to the search bar. Once they hit search they will see the name of the city, the current temperature (rounded to the nearest whole number), humidity, wind speed, and UV index where the severty of the UV index at the moment is also marked by the colors blue, orange, and red from least to most severe. They will also then see a five-day forecast for that city starting with whatever tomorrow is to them. Each city they search is stored in an array in local storage, and left as a button at the top. That is so the user can go back to any city they already searched to check again.
+
+To program this weather dashboard I used a function to fetch the weather using OpenWeatherMap.org. I inserted into the URL the city name and API key. From there I get my data console logged. My next function uses another API from openweathermap.org. This gets the current weather. In that function I created a card to add all of my data to. Next I made a function to build the five-day forecast. That uses a for loop starting from day 1 where I add a card for each day including the forecasted weather along with an icon from openweathermap.org's library. Once a city is searched it is stored in local storage, and that is how the buttons are made. From there the past city buttons can be cleared by clearing the local storage.
