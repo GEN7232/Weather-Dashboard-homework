@@ -8,7 +8,7 @@ var fiveDay = document.getElementById('5day');
 
 
 function searchCity (searchCity) {
-    fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + searchCity + "&limit=1&appid=" + apiKey).then(response => {
+    fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + searchCity + "&limit=1&appid=" + apiKey).then(response => {
         console.log(response);
         return response.json();
     }).then(data => {
